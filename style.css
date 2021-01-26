@@ -1,0 +1,116 @@
+*, *::before, *::after {
+  font-family: fantasy ;
+  box-sizing: border-box;
+}
+body {
+  background-color:rgb(28, 119, 255);
+}
+.calc {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom:6%;
+  background-color:#000000;
+  height: 465px;
+  align-content: center;
+  width: 40%;
+  margin-left:29%;
+}
+
+.screen {
+  width: 100%;
+  font-size: 42px;
+  height: 125px;
+  background-color: #6e6e6e;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+  border-right: 15px solid #000000;
+  border-left: 15px solid #000000;
+  border-top: 20px solid #000000;
+  border-bottom: 5px solid #000000;
+  grid-column: 1 / -1;
+  display:flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+  
+  
+}
+.buttons {
+  
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  
+  
+}
+button {
+  margin: 2px 2px;
+  padding: 10px;
+  font-size: 32px;
+  
+}
+.span2 {
+  grid-column: span 2;
+}
+.span3 {
+  grid-column: span 3;
+}
+  
+button:hover {
+cursor: pointer;
+opacity: 0.7;
+}
+
+@media (orientation:landscape) and (max-width:1060px){
+.calc {
+  margin-top: 5%;
+  margin-bottom:0%;
+  height: 600px;
+  width: 50%;
+  margin-left:26%;
+}
+
+.screen {
+  width: 100%;
+  font-size: 54px;
+  height: 155px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+button {
+  margin: 5px 5px;
+  padding: 10px;
+  font-size: 44px;
+}
+}
+
+@media all and (max-width:600px){
+
+  .calc {
+    margin-top: 10%;
+    margin-bottom:0%;
+    height: 560px;
+    width: 75%;
+    margin-left:14%;
+  }
+    
+  .screen {
+    width: 100%;
+    font-size: 42px;
+    height: 125px;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;  
+  }
+
+  button {
+    margin: 3px 3px;
+    padding: 10px;
+    font-size: 46px;  
+  }
+}
