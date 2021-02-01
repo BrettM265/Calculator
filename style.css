@@ -94,16 +94,17 @@ button {
   .calc {
     margin-top: 10%;
     margin-bottom:0%;
-    height: 560px;
-    width: 75%;
-    margin-left:14%;
+    height: 500px;
+    width: 100%;
+    margin-left:0%;
+    
   }
     
   .screen {
     width: 100%;
     font-size: 42px;
     height: 125px;
-    text-align: right;
+    text-align: left;
     padding-right: 20px;
     padding-left: 10px;  
   }
@@ -111,6 +112,6 @@ button {
   button {
     margin: 3px 3px;
     padding: 10px;
-    font-size: 24px;  
+    font-size: 36px;  
   }
 }
